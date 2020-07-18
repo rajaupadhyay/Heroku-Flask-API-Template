@@ -20,5 +20,5 @@ config = {
 }
 
 def configure_app(app):
-    config_name= os.getenv('FLASK_ENV')
+    config_name= "production"
     app.config.from_object(config[config_name])
