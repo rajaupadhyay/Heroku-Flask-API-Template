@@ -53,3 +53,7 @@ def readRow(name, email):
             email = row.email
             break
     return (email)
+
+def retrieveAllRows():
+    dataVals = DBTemplate.query.all()
+    return([x.email for x in dataVals])
