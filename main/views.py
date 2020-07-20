@@ -1,6 +1,6 @@
 from main import app 
 from flask import request, jsonify
-from db_utils import insertRow, deleteRow, retrieveAllRows
+from main.db_utils import insertRow, deleteRow, retrieveAllRows
 
 @app.route('/')
 def home():
