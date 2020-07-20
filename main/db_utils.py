@@ -29,7 +29,7 @@ def deleteRow(name, email):
     rowDoesNotExist, queryCursor = checkRowExistence(name, email)
 
     if not rowDoesNotExist:
-        print('DELETING RECORD {} {} {}'.format(name, email))
+        print('DELETING RECORD {} {}'.format(name, email))
         queryCursor.delete()
         db.session.commit()
 
